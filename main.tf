@@ -62,6 +62,15 @@ resource "aws_security_group" "allow_ssh" {
     ipv6_cidr_blocks = []
   }
 
+  ingress {
+    description      = "Open Server"
+    from_port        = 4000
+    to_port          = 4000
+    protocol         = "tcp"
+    cidr_blocks      = ["0.0.0.0/0"]
+    ipv6_cidr_blocks = []
+  }
+
   egress {
     from_port        = 0
     to_port          = 0

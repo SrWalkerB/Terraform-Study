@@ -7,8 +7,3 @@
       ansible.builtin.git:
         repo: https://github.com/SrWalkerB/terraform-test
         dest: /home/ubuntu/projects/
-    - name: Start Project
-      shell: | 
-        cd projects && npm start
-      args:
-        executable: /bin/bash

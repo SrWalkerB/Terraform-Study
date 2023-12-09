@@ -1,0 +1,16 @@
+---
+- hosts: all
+  remote_user: ubuntu
+  become: yes
+  tasks:
+    - name: Install Setup Node
+      shell: | 
+        curl -fsSL https://deb.nodesource.com/setup_18.x | sudo -E bash -
+      args:
+        executable: /bin/bash
+
+    - name: Install Node
+      apt:
+        name: nodejs
+        state: latest
+        update_cache: true

@@ -1,0 +1,3 @@
+- include: dependency.yml
+- include: docker.yml
+- include: setup-project.yml

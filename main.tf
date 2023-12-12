@@ -21,7 +21,7 @@ resource "aws_key_pair" "ssh_key" {
 resource "aws_instance" "app_server" {
   ami           =  var.server_ami
   instance_type = var.server_instance_type
-  count = 1
+  count = 3
   key_name = var.ssh_key_name
 
   vpc_security_group_ids = [aws_security_group.allow_ssh.id]

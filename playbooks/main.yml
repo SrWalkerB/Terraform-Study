@@ -1,3 +1,4 @@
 - import_playbook: docker.yml
 - import_playbook: dependency.yml
 - import_playbook: setup-project.yml
+- import_playbook: nginx_config.yml

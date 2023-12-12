@@ -7,3 +7,6 @@
       ansible.builtin.git:
         repo: https://github.com/SrWalkerB/terraform-test
         dest: /home/ubuntu/projects/
+
+    - name: Run Project With Docker Compose
+      ansible.builtin.shell: "docker-compose -f /home/ubuntu/projects/backend-test/docker-compose.yml up -d"

@@ -10,7 +10,7 @@ variable "ssh_key_name" {
 
 variable "server_name" {
   type = string
-  default = "server"
+  default = "duck server"
 }
 
 variable "server_ami" {
